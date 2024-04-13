@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+#header {
+    background-color: dimgray;
+    color: white;
+    padding: 1.5rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 0;
+
+
+    
+}
+
+#iframe{
+    height: 800px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border-color: black;
+    display: inline;
+    float: left;
+    
+}
+
+
+#profile{
+    margin-top: 20px;
+}
+
+#dropbutton{
+    background-color:white;
+    width:180px;
+    height:40px;
+   text-align: left;
+   padding-left: 15px;
+   border-radius: 15px;
+   font-size: 17px;
+   margin-bottom: 25px;
+}
+
+.districts{
+    background-color:white;
+    width:230px;
+    height:40px;
+   text-align: left;
+   padding-left: 15px;
+   border-radius: 15px;
+   font-size: 17px;
+   margin-bottom: 25px;
+}
+
+.districts:hover{
+    transform: scale(1.05);
+}
+
+.navbar {
+
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* #navbar{
+    
+    background-color:black;
+    margin-left: 350px;
+    color: white;
+
+}
+li{
+    display: inline;
+}
+#top{
+    
+    height: 100px;
+    background-color:white ;
+    background-size: cover;
+    padding-top: 10px;
+    color:black;
+    
+
+}
+
+.list{
+    display: inline;
+   padding: 10px;
+   padding-top: 100px;
+   cursor: pointer;
+
+}
+#title{
+    padding-right: 400px;
+    display: inline;
+    
+    
+}
+
+#toop{
+    padding-bottom: 500px;
+}
+
+.list:hover{
+    transform:scale(0.5);
+    
+}
+
+#map{
+    background-color: aqua;
+} */

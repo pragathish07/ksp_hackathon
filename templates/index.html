@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kSP</title>
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    background-color:dimgray ;
+    color: white;
+    padding: 25px;
+    margin-top: 0;
+
+    
+}
+
+#iframe{
+    height: 800px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border-color: black;
+    display: inline;
+    float: left;
+  
+    
+}
+
+
+
+#profile{
+    margin-top: 20px;
+}
+
+#dropbutton{
+    background-color:white;
+    width:180px;
+    height:40px;
+   text-align: left;
+   padding-left: 15px;
+   border-radius: 15px;
+   font-size: 17px;
+   margin-bottom: 25px;
+}
+
+.districts{
+    background-color:white;
+    width:230px;
+    height:40px;
+   text-align: left;
+   padding-left: 15px;
+   border-radius: 15px;
+   font-size: 17px;
+   margin-bottom: 25px;
+}
+
+.districts:hover{
+    transform: scale(1.05);
+}
+
+
+#navbar{
+    color: white;
+    background-color: blanchedalmond;
+
+}
+li{
+    display: inline;
+}
+
+
+#top{
+    height: 100px;
+    background-color:white ;
+    background-size: cover;
+    padding-top: 10px;
+    color:black;
+    
+
+}
+
+.list{
+    display: inline;
+   padding: 10px;
+   padding-top: 100px;
+   cursor: pointer;
+
+}
+#title{
+    padding-right: 400px;
+    display: inline;
+    
+    
+}
+
+#toop{
+    padding-bottom: 500px;
+}
+
+.list:hover{
+    transform:scale(0.5);
+    
+}
+
+#pointermap{
+
+    width: 280px;
+    height: 230px;
+    padding: 0%;
+   
+}
+
+#trafficmap{
+   width: 280px;
+   height: 230px;
+   padding: 0px;
+}
+
+#mapdiv{
+
+    margin-left:px;
+   
+}
+#maindiv{
+    width: 1180px;
+    height: 2000px;
+    
+    margin-right: 0px;
+    
+}
+#rowdiv{
+    display: flex;
+    flex-direction: row;
+}
+#srow1{
+    height: 700px;
+    width: 620px;
+    
+
+}
+#srow2{
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    width: 550px;
+    
+
+}
+#sdiv1{
+    width: 580px;
+    height:200px;
+    
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#sdiv2{
+    width: 580px;
+    height:400px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+#s2div1{
+    width: 310px;
+    height: 700px;
+    
+
+}
+#s2div2{
+    width: 230px;
+    height: 700px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+    
+
+}
+#ssdiv1{
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#ssdiv2{
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+#iframe2{
+    width: 200px;
+    height: 450px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+    
+}
+span{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#scroll{
+    height: 700px;
+    width: 300px;
+    border: 1px solid black;
+    margin-top: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#mainrow1{
+    display: flex;
+    flex-direction: row;
+}
+#s2column{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 700px;
+}
+
+     
+    
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1  align="left">Karnataka State Police </h1>
+    </header>
+
+    <div id="mainrow1">
+
+    
+    <div id="scroll">
+        <div align="center">
+            <img id="profile" src="C:\Users\kulas\OneDrive\Desktop\ksp hakathon\download.jpeg">
+            <h2>Welcome Captain</h2>
+      
+             <div id="catagories">
+                   <button id="dropbutton">Catagories</button>
+             </div>
+      
+             <h2>District Wise Analysis</h2>
+      
+      
+      
+               <div>
+                  <div>
+                      <button class="districts" >Bagalkot 
+                      </button>
+                      <button class="districts">Ballari
+                      </button>
+                      <button class="districts">Belagavi City
+                      </button>
+                      <button class="districts">Belagavi Dist
+                      </button>
+                      <button class="districts">Bengaluru City
+                      </button>
+                      <button class="districts">Bengaluru Dist
+                      </button>
+                      <button class="districts">Bidar
+                      </button>
+                      <button class="districts">Chamarajanagar
+                      </button>
+                      <button class="districts">Chickballapura
+                      </button>
+                      <button class="districts">Chikkamagaluru
+                      </button>
+                      <button class="districts">Chitradurga
+                      </button>
+                      <button class="districts">Dakshina Kannada
+                      </button>
+                      <button class="districts">Davanagere
+                  </button>
+                  <button class="districts">Dharwad
+                  </button>
+                  <button class="districts">Gadag
+                  </button>
+                  <button class="districts">Hassan
+                  </button>
+                  <button class="districts">Haveri
+                  </button>
+                  <button class="districts">Hubballi Dharwad City
+                  </button>
+                  <button class="districts">K.G.F
+                  </button>
+                  <button class="districts">Kalaburagi
+                  </button>
+                  <button class="districts">Kalaburagi City
+                  </button>
+                  <button class="districts">Karnataka Railways
+                  </button>
+                  <button class="districts">Kodagu
+                  </button>
+                  <button class="districts">Kolar
+                  </button>
+                  <button class="districts">Koppal
+                  </button>
+                  <button class="districts">Mandya
+                  </button>
+                  <button class="districts">Mangaluru City
+                  </button>
+                  <button class="districts">Mysuru City
+                  </button>
+                  <button class="districts">Mysuru Dist
+                  </button>
+                  <button class="districts">Raichur
+                  </button>
+                  <button class="districts">Ramanagara
+                  </button>
+                  <button class="districts">Shivamogga
+                  </button>
+                  <button class="districts">Tumakuru
+                  </button>
+                  <button class="districts">Udupi
+                  </button>
+                  <button class="districts">Uttara Kannada
+                  </button>
+                  <button class="districts">Vijayanagara
+                  </button>
+                  <button class="districts">Vijayapur
+                  </button>
+                  <button class="districts">Yadgir
+                  </button>
+                </div>
+                </div>
+      
+      
+      </div>
+        
+    </div>
+
+ <div  id="maindiv">
+    <div id="navbar">
+        <nav>
+          
+          <div id="top">
+            <h2 id="toop">
+                <ol>
+                    <li><h3 id="title">Accident Analysis</h3></li>
+                    <li class="list">Home</li>
+                    <li class="list">Map</li>
+                    <li class="list">About Us</li>
+                    <li class="list">Logout</li>
+                </ol>
+            </h2>
+    
+     
+    
+        </div>
+          
+        </nav>
+           
+      </div>
+    <div id="rowdiv">
+        <div id="srow1">
+            <div id="sdiv1">
+
+            </div>
+            <div id="sdiv2">
+
+            </div>
+            <div id="sdiv1">
+
+            </div>
+            <div id="sdiv1">
+
+            </div>
+            <div id="sdiv1">
+
+            </div>
+            <div id="sdiv1">
+
+            </div>
+            <div id="sdiv1">
+
+            </div>
+            <div id="sdiv1">
+
+            </div>
+            <div id="sdiv1">
+
+            </div>
+            <div id="sdiv1">
+
+            </div>
+
+        </div>
+        <div id="srow2">
+            <div id="s2div1">
+                <div id="ssdiv1">
+
+                </div>
+                <div id="ssdiv2">
+
+                </div>
+                <div id="ssdiv1">
+
+                </div>
+                <div id="ssdiv1">
+
+                </div>
+                <div id="ssdiv1">
+
+                </div>
+                <div id="ssdiv1">
+
+                </div>
+                <div id="ssdiv1">
+
+                </div>
+                <div id="ssdiv1">
+
+                </div>
+                <div id="ssdiv1">
+
+                </div>
+
+            </div>
+            <div id="map">
+
+                <div id="s2column">
+                <div id="s2div2">
+                    <span>Overall Accident Areas</span>
+                    <iframe  id="iframe2" src="./leafletmap.html"></iframe>
+    
+                </div>
+                <div id="s2div2">
+                    <span>Overall Accident Areas</span>
+                    <iframe  id="iframe" src="./leafletmap.html" ></iframe>
+    
+                </div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+        
+
+    </div>
+
+   
+   
+   
+   </div>
+
+    </div>
+ 
+ 
+    <img src="{{ pie_chart_url }}" alt="Pie Chart: Accident Distribution by Location">
+
+    <img src="{{ line_chart_url }}" alt="Line Chart: Total Accidents per District">
+
+    <img src="{{ bar_chart_url }}" alt="Bar Chart: Accident Distribution by Road Type">
+
+</body>
+
+<!-- <script> 
+    function load(){
+      document.getElementById("#map").load("leafletmap.html"); 
+      console.log("loaded");
+    }
+    load()
+    </script> -->
+</html>
